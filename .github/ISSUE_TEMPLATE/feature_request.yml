@@ -1,0 +1,17 @@
+name: 功能建议
+description: 描述日常经营中希望改善的工作。
+title: "[建议] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你遇到的实际问题
+      description: 目前如何处理？最花时间或最容易出错的地方是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你希望的改进
+    validations:
+      required: true

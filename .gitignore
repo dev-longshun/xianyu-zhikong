@@ -1,0 +1,12 @@
+.DS_Store
+.release-cache/
+*.dmg
+*.exe
+*.msi
+*.zip
+*.blockmap
+.env
+.env.*
+*.log
+*.db
+*.sqlite*
