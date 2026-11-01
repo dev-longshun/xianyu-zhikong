@@ -24,7 +24,7 @@
 
 当前 Windows 安装包没有微软代码签名。若 SmartScreen 显示「Windows 已保护你的电脑」，先确认文件来自本仓库 Releases 或官网，并核对校验值；确认来源后，可在「更多信息」中选择「仍要运行」。遇到其他安全软件提示，请先核对来源与具体提示，再联系作者。
 
-第一次安装也可以参考官网提供的 [Windows 图文教程](https://gcnzgsgcqh5b.feishu.cn/docx/Ua4IdKnsGoTJmGxkQVFcQhqwnrh)。
+第一次安装也可以参考官网提供的 [Windows 图文安装与激活教程](https://xianyu.dongeai.com/tutorials/windows/)，包含完整操作截图。
 
 ## 下载慢或中断
 
@@ -40,13 +40,13 @@
 Mac 终端：
 
 ```sh
-shasum -a 256 ~/Downloads/xianyu-zhikong-1.3.2-mac-arm64.dmg
+shasum -a 256 ~/Downloads/xianyu-zhikong-1.3.3-mac-arm64.dmg
 ```
 
 Windows PowerShell：
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.3.2-windows-x64.exe" -Algorithm SHA256
+Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.3.3-windows-x64.exe" -Algorithm SHA256
 ```
 
 ## 激活与联系

@@ -8,6 +8,8 @@
     <a href="https://github.com/dev-longshun/xianyu-zhikong/releases/latest">下载客户端</a> ·
     <a href="#购买与联系">购买与联系</a> ·
     <a href="docs/INSTALL.md">安装指南</a> ·
+    <a href="https://xianyu.dongeai.com/tutorials/">使用教程</a> ·
+    <a href="https://xianyu.dongeai.com/changelog/">更新日志</a> ·
     <a href="https://github.com/dev-longshun/xianyu-zhikong/issues">反馈问题</a>
   </p>
   <p><b>Mac / Windows · 29 元 / 月 · 一份授权两台电脑</b></p>
@@ -34,12 +36,12 @@
 
 ## 下载客户端
 
-**当前安装版：v1.3.2（2026-10-31 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
+**当前安装版：v1.3.3（2026-11-01 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
 
 | 系统 | GitHub 下载 | 备用下载 |
 | --- | --- | --- |
-| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/latest/download/xianyu-zhikong-1.3.2-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
-| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/latest/download/xianyu-zhikong-1.3.2-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
+| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.3.3/xianyu-zhikong-1.3.3-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
+| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.3.3/xianyu-zhikong-1.3.3-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
 
 Mac 暂不支持 Intel 芯片。手机不能安装，请在电脑上下载。
 
