@@ -12,7 +12,7 @@
     <a href="https://xianyu.dongeai.com/changelog/">更新日志</a> ·
     <a href="https://github.com/dev-longshun/xianyu-zhikong/issues">反馈问题</a>
   </p>
-  <p><b>Mac / Windows · 29 元 / 月 · 一份授权两台电脑</b></p>
+  <p><b>Mac / Windows · 19 元起 / 月 · 一份授权两台电脑</b></p>
 </div>
 
 ![闲鱼智控消息界面：会话列表、聊天和买家订单在同一页](assets/t-msg.webp)
@@ -36,12 +36,12 @@
 
 ## 下载客户端
 
-**当前安装版：v1.3.3（2026-11-01 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
+**当前安装版：v1.4.0（2026-11-02 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
 
 | 系统 | GitHub 下载 | 备用下载 |
 | --- | --- | --- |
-| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.3.3/xianyu-zhikong-1.3.3-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
-| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.3.3/xianyu-zhikong-1.3.3-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
+| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.4.0/xianyu-zhikong-1.4.0-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
+| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.4.0/xianyu-zhikong-1.4.0-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
 
 Mac 暂不支持 Intel 芯片。手机不能安装，请在电脑上下载。
 
@@ -143,7 +143,12 @@ Mac 暂不支持 Intel 芯片。手机不能安装，请在电脑上下载。
 
 ## 购买与联系
 
-**29 元 / 月，一份授权可以激活两台电脑。** Mac（Apple 芯片）和 Windows 均可使用，上述商业安装版功能包含在内。
+两个版本功能完全一样，都是一份授权激活两台电脑，Mac（Apple 芯片）和 Windows 均可使用，上述商业安装版功能包含在内：
+
+- **基础版 19 元 / 月**：每台电脑登录 1 个闲鱼账号，两台电脑一共 2 个；换账号先退出当前账号，再扫码登录。
+- **高级版 29 元 / 月**：每台电脑登录的闲鱼账号数量不限。
+
+此前购买的激活码均按高级版使用。基础版激活码需要 1.4.0 及以上版本。两个版本的逐项对比见官网[价格页](https://xianyu.dongeai.com/pricing/)。
 
 可以先下载查看界面，确定适合后再加作者微信购买激活码。
 

@@ -40,17 +40,17 @@
 Mac 终端：
 
 ```sh
-shasum -a 256 ~/Downloads/xianyu-zhikong-1.3.3-mac-arm64.dmg
+shasum -a 256 ~/Downloads/xianyu-zhikong-1.4.0-mac-arm64.dmg
 ```
 
 Windows PowerShell：
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.3.3-windows-x64.exe" -Algorithm SHA256
+Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.4.0-windows-x64.exe" -Algorithm SHA256
 ```
 
 ## 激活与联系
 
-价格为 **29 元 / 月**，一份授权可激活两台电脑。微信：`OxRabbitno1`（首字母为大写字母 O）。
+基础版 **19 元 / 月**（每台电脑登录 1 个闲鱼账号），高级版 **29 元 / 月**（账号数量不限），一份授权都可激活两台电脑，详见[价格页](https://xianyu.dongeai.com/pricing/)。微信：`OxRabbitno1`（首字母为大写字母 O）。
 
 [返回购买与联系](../README.md#购买与联系)
