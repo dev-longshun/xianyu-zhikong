@@ -36,12 +36,12 @@
 
 ## 下载客户端
 
-**当前安装版：v1.5.0（2026-11-08 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
+**当前安装版：v1.6.0（2026-11-08 发布）。** 可以先下载安装、打开查看界面；登录闲鱼店铺前需要激活码。
 
 | 系统 | GitHub 下载 | 备用下载 |
 | --- | --- | --- |
-| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.5.0/xianyu-zhikong-1.5.0-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
-| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.5.0/xianyu-zhikong-1.5.0-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
+| Mac · Apple 芯片 · macOS 11 及以上 | [下载 DMG](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.6.0/xianyu-zhikong-1.6.0-mac-arm64.dmg) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-mac-arm64.dmg) |
+| Windows · 64 位 Windows 10 / 11 | [下载安装 EXE](https://github.com/dev-longshun/xianyu-zhikong/releases/download/v1.6.0/xianyu-zhikong-1.6.0-windows-x64.exe) | [官网下载](https://dl.longjinapi.com/xianyu-zhikong-windows-x64.exe) |
 
 Mac 暂不支持 Intel 芯片。手机不能安装，请在电脑上下载。
 
@@ -166,7 +166,7 @@ Mac 暂不支持 Intel 芯片。手机不能安装，请在电脑上下载。
 
 **电脑要一直开着吗？** 要。自动发货、自动回复等任务在电脑上运行，客户端需要保持运行并联网。
 
-**能同时管几个店铺？** 一份授权两台电脑，每台电脑能登录 5 个以上店铺；实际运行情况会受到电脑配置、网络及平台状态影响。
+**能同时管几个店铺？** 一份授权两台电脑，每台电脑能登录 5 个以上店铺，但不建议一台电脑登到 10 个；实际运行情况会受到电脑配置、网络及平台状态影响。
 
 **卡密从哪里来？** 自行导入固定卡密，或者接入自己的发卡接口。软件本身不提供货源。
 

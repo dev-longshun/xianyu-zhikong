@@ -40,13 +40,13 @@
 Mac 终端：
 
 ```sh
-shasum -a 256 ~/Downloads/xianyu-zhikong-1.5.0-mac-arm64.dmg
+shasum -a 256 ~/Downloads/xianyu-zhikong-1.6.0-mac-arm64.dmg
 ```
 
 Windows PowerShell：
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.5.0-windows-x64.exe" -Algorithm SHA256
+Get-FileHash "$env:USERPROFILE\Downloads\xianyu-zhikong-1.6.0-windows-x64.exe" -Algorithm SHA256
 ```
 
 ## 激活与联系
