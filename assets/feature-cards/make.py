@@ -19,8 +19,9 @@ CARDS = [
     ('5-经营数据逐笔对账', 't-data', '支付、退款、实际收入，逐笔对账', '多个店铺合计，每张数据卡点进去是明细'),
 ]
 
-# 闲鱼方图要过平台图片审核：截图里违禁词那一行（翻墙、科学上网等敏感词）模糊掉。值为截图上的 (左, 上, 宽, 高)，按截图宽高的百分比。
-SQUARE_MASKS = {'t-reply': [(20.0, 30.6, 46.0, 4.0)]}
+# 截图里要额外遮住的区域，值为 (左, 上, 宽, 高)，按截图宽高的百分比，只对方图生效。
+# t-reply 违禁词那一行的敏感词（翻墙、科学上网等）2026-11-09 已在源图 web/img/t-reply.webp 里模糊，这里不用再遮。
+SQUARE_MASKS = {}
 
 WIDE = '''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{{font-family:"XGJ Serif SC";font-weight:600;src:url("file://{web}/fonts/serif-sc-600.woff2")}}
