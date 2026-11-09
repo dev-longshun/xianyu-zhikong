@@ -2,11 +2,12 @@
 
 用法（在 public/ 目录下）：python3 assets/feature-cards/make.py          两种都出
       只出一种：python3 assets/feature-cards/make.py wide | square
+      高清：后面加 hd，保留 2 倍原图不缩小，输出到 hd/（如 make.py wide hd）
 需要本机装有 Google Chrome，图片取自 ../web/img/，字体取自 ../web/fonts/（只含官网用过的字，标题出现新字时先在官网重切字体，否则会退回系统宋体）。
 改标题、换截图、加一张：改下面的 CARDS 再跑一遍。2026-11-09 为新趣集产品页制作，也可用于其他平台和宣传物料。
 """
 from pathlib import Path
-import subprocess, sys, tempfile
+import shutil, subprocess, sys, tempfile
 
 HERE = Path(__file__).resolve().parent
 WEB = HERE.parents[2] / 'web'
@@ -35,7 +36,7 @@ p{{margin:10px 0 0;font:400 19px/1.4 -apple-system,"PingFang SC",sans-serif;colo
 .frame div{{width:100%;height:100%;border-radius:12px 12px 0 0;overflow:hidden;box-shadow:0 6px 24px rgba(47,45,42,.12)}}
 .frame img{{width:100%;display:block}}
 </style></head><body>
-<div class="top"><div><h1>{title}</h1><p>{sub}</p></div><div class="brand"><img src="file://{web}/img/logo.webp">闲鱼智控</div></div>
+<div class="top"><div><h1>{title}</h1><p>{sub}</p></div><div class="brand"><img src="file://{here}/logo-1024.png">闲鱼智控</div></div>
 <div class="frame"><div><img src="file://{web}/img/{shot}.webp"></div></div></body></html>'''
 
 SQUARE = '''<!doctype html><html><head><meta charset="utf-8"><style>
@@ -50,13 +51,14 @@ p{{position:absolute;left:64px;right:64px;top:300px;margin:0;font:400 26px/1.45 
 .frame img{{width:100%;display:block}}
 .frame i{{position:absolute;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);background:rgba(255,255,255,.35);border-radius:6px}}
 </style></head><body>
-<div class="brand"><img src="file://{web}/img/logo.webp">闲鱼智控</div>
+<div class="brand"><img src="file://{here}/logo-1024.png">闲鱼智控</div>
 <h1>{title}</h1><p>{sub}</p>
 <div class="frame"><div><img src="file://{web}/img/{shot}.webp">{masks}</div></div></body></html>'''
 
 # 方图标题按逗号断成两行，读起来更像主图卖点
 LAYOUTS = {'wide': (WIDE, 1280, 720, HERE, lambda t: t), 'square': (SQUARE, 1080, 1080, HERE / 'square', lambda t: t.replace('，', '，<br>', 1))}
-wanted = sys.argv[1:] or list(LAYOUTS)
+HD = 'hd' in sys.argv  # hd：保留 2 倍原图（2560×1440 / 2160×2160）不缩小，放进 hd/，给少数派这类大图显示的文章用
+wanted = [a for a in sys.argv[1:] if a in LAYOUTS] or list(LAYOUTS)
 
 with tempfile.TemporaryDirectory() as tmp:
     for layout in wanted:
@@ -65,10 +67,15 @@ with tempfile.TemporaryDirectory() as tmp:
         for name, shot, title, sub in CARDS:
             page, big = Path(tmp) / f'{layout}-{name}.html', Path(tmp) / f'{layout}-{name}@2x.png'
             masks = ''.join(f'<i style="left:{l}%;top:{t}%;width:{w_}%;height:{h_}%"></i>' for l, t, w_, h_ in SQUARE_MASKS.get(shot, [])) if layout == 'square' else ''
-            page.write_text(template.format(web=WEB, shot=shot, title=wrap(title), sub=sub, masks=masks))
+            page.write_text(template.format(web=WEB, here=HERE, shot=shot, title=wrap(title), sub=sub, masks=masks))
             # 按 2 倍渲染再缩回目标尺寸，文字更清楚
             subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files',
                             f'--window-size={w},{h}', '--force-device-scale-factor=2', f'--screenshot={big}', page.as_uri()],
                            check=True, capture_output=True)
-            subprocess.run(['sips', '-z', str(h), str(w), str(big), '--out', str(out / f'{name}.png')], check=True, capture_output=True)
-            print(layout, name, (out / f'{name}.png').stat().st_size // 1024, 'KB')
+            dest = out / 'hd' / f'{name}.png' if HD else out / f'{name}.png'
+            dest.parent.mkdir(exist_ok=True)
+            if HD:
+                shutil.copy(big, dest)
+            else:
+                subprocess.run(['sips', '-z', str(h), str(w), str(big), '--out', str(dest)], check=True, capture_output=True)
+            print(layout, name, dest.stat().st_size // 1024, 'KB')

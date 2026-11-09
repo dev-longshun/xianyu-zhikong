@@ -11,3 +11,5 @@
 | 5-经营数据逐笔对账.png | 支付、退款、实际收入，逐笔对账 |
 
 重新生成、改标题或加一张：改 `make.py` 里的 `CARDS`，在 `public/` 下运行 `python3 assets/feature-cards/make.py`（只出一种：后面加 `wide` 或 `square`）。
+
+高清版：`python3 assets/feature-cards/make.py wide hd` 保留 2 倍原图（2560×1440）不缩小，输出到 `hd/`。少数派这类正文按大图显示的平台用高清版，1280 版放大后会发虚（2026-11-09）。logo 用同目录的 `logo-1024.png`。
